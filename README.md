@@ -2,6 +2,10 @@
 
 Wraps [screepers/screeps-launcher](https://github.com/screepers/screeps-launcher/tree/main) to create a Pterodactyl compatible Egg for Screeps.
 
+## Limitations
+
+- At the moment only the default game and cli ports are supported. I'm not sure how to change the game port with `screeps-launcher`.
+
 ## Pterodactyl Configuration
 
 ### Variables

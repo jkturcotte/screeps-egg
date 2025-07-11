@@ -1,4 +1,4 @@
-FROM screepers/screeps-launcher:latest
+FROM ghcr.io/screepers/screeps-launcher:main
 
 ENTRYPOINT []
 
