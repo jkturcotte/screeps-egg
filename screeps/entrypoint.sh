@@ -37,7 +37,7 @@ if [[ -n "${WELCOME_TEXT}" || -n "${TICK_RATE}" ]]; then
     if [[ -n "${WELCOME_TEXT}" ]]; then
         echo "  welcomeText:  |" >> $CONFIG_FILE
         while IFS= read -r line; do
-            echo"    ${line}" >> $CONFIG_FILE
+            echo "    ${line}" >> $CONFIG_FILE
         done <<< "$WELCOME_TEXT"
     fi
 
