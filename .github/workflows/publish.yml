@@ -27,6 +27,9 @@ jobs:
         uses: docker/metadata-action@v5
         with:
           images: ghcr.io/${{ github.repository }}
+          tags: |
+            type=raw,value=latest,enable=${{ github.ref == 'refs/heads/trunk' }}
+            type=raw,value=test,enable=${{ github.ref == 'refs/heads/test' }}
 
       - name: Build and Push Docker Image
         uses: docker/build-push-action@v5
